@@ -143,22 +143,22 @@ public class Calculator extends VBox implements EventHandler<ActionEvent> {
 				if (number1.isEmpty() || number2.isEmpty() || operator == null || operator.isEmpty())
 					return;
 
-				double n1 = Double.parseDouble(number1);
-				double n2 = Double.parseDouble(number2);
+				double x = Double.parseDouble(number1);
+				double y = Double.parseDouble(number2);
 				double result = 0;
 
 				switch (operator) {
 					case "+":
-						result = n1 + n2;
+						result = x + y;
 						break;
 					case "-":
-						result = n1 - n2;
+						result = x - y;
 						break;
 					case "*":
-						result = n1 * n2;
+						result = x * y;
 						break;
 					case "/":
-						result = n1 / n2;
+						result = x / y;
 						break;
 				}
 
